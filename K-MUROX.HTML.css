@@ -1,0 +1,128 @@
+/* Global Styling */
+body {
+  font-family: 'Poppins', sans-serif; /* Unique font */
+  margin: 0;
+  padding: 0;
+  background-color: #f9f5f4;
+  color: #333;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+/* Shaded Rectangle Box Style */
+.text-box {
+  background: linear-gradient(145deg, #f7e5e5, #e1cccc);
+  border: 1px solid #d1a9a9;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px auto;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover Effect */
+.text-box:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(145deg, #e8d3d3, #dbc2c2);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3), -2px -2px 6px rgba(255, 255, 255, 0.8);
+}
+
+/* Font Styling */
+.text-box h1, .text-box h2, .text-box p {
+  font-size: 1.2rem;
+  color: #5b4343;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.text-box h1 {
+  font-size: 2rem;
+}
+
+.text-box h2 {
+  font-size: 1.8rem;
+}
+
+.text-box p {
+  font-size: 1.4rem;
+}
+
+/* Navigation Bar */
+nav {
+  background: #a39494;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  background: #ccb5b5;
+  transform: scale(1.1);
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background: #d9c3c3;
+  color: #5b4343;
+}
+
+td {
+  background: #f7e5e5;
+}
+
+tr:hover {
+  background: #e8d3d3;
+  transition: background 0.3s ease;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #a39494;
+  color: white;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .text-box h1 {
+    font-size: 1.5rem;
+  }
+  .text-box h2 {
+    font-size: 1.3rem;
+  }
+  .text-box p {
+    font-size: 1rem;
+  }
+}
